@@ -10,7 +10,7 @@ while true ; do
 
     cpulimit -p ${nid} -l 75 &
 
-    echo "[`date`] CpuLimiter run for ${nid} `ps -ef | grep ${nid} | awk '{print $8}' | head -1`" >> /root/cpulimit-log.log
+    echo "[`date`] CpuLimiter run for ${nid} `ps -ef | grep ${nid} | awk '{print $8}' | head -1`" >> /var/log/cpulimit.log
 
   fi
 
